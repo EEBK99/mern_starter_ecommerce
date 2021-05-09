@@ -14,7 +14,7 @@
 
 ### Mongoose
 
-## npm Packages used
+## NPM Packages used
 
 ### express
 
