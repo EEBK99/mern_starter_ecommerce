@@ -1,6 +1,10 @@
-import react from "react";
+import react, { useEffect } from "react";
+import axios from "axios";
 
-const Signup = () => {
+const Home = () => {
+  useEffect(() => {
+    axios.get("https://jsonplaceholder.typicode.com/todos/1");
+  });
   return (
     <div>
       <h2>All Products</h2>
@@ -9,4 +13,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Home;
