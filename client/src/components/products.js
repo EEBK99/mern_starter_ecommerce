@@ -3,8 +3,10 @@ import axios from "axios";
 
 const Home = () => {
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/todos/1");
-  });
+    axios.get("https://localhost:3000/products").then((res) => {
+      console.log(res);
+    });
+  }, []);
   return (
     <div>
       <h2>All Products</h2>
