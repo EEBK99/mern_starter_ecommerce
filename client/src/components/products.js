@@ -3,9 +3,14 @@ import axios from "axios";
 
 const Home = () => {
   useEffect(() => {
-    axios.get("https://localhost:3000/products").then((res) => {
+    fetch("https://localhost:3000/products", {
+      method: "GET",
+    }).then((res) => {
       console.log(res);
     });
+    // axios.get("https://localhost:3000/products").then((res) => {
+    //   console.log(res);
+    // });
   }, []);
   return (
     <div>
