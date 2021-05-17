@@ -13,7 +13,7 @@ const Signup = () => {
     <div>
       <h2>Signup Page</h2>
       <form onSubmit={submitform}>
-        <input type="name" placeholder="Your Fullname"></input>
+        {/* <input type="name" placeholder="Your Fullname"></input> */}
         <input type="email" placeholder="Your Email"></input>
         <input type="password" placeholder="Your Password"></input>
         <button type="submit">Signup</button>
