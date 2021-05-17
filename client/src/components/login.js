@@ -4,7 +4,7 @@ import axios from "axios";
 const Login = () => {
   const submitform = (e) => {
     e.preventDefault();
-    axios.get("http://localhost:3000/login").then((res) => {
+    axios.post("http://localhost:3001/auth/login").then((res) => {
       console.log(res);
     });
     console.log("You are Logged in successfully!");

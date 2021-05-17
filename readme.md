@@ -29,3 +29,5 @@
 ### axios
 
 ### react router
+
+### cors

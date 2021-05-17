@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const authRouter = require("./routes/auth");
 const productRouter = require("./routes/product");
+
 const app = express();
 
 app.get("/", (req, res) => {
@@ -11,6 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(cors());
+app.use(express.json());
 app.use("/auth", authRouter);
 app.use("/product", productRouter);
 

@@ -3,14 +3,10 @@ import axios from "axios";
 
 const Home = () => {
   useEffect(() => {
-    fetch("https://localhost:3000/products", {
-      method: "GET",
-    }).then((res) => {
+    axios.get("https://localhost:3001/products").then((res) => {
       console.log(res);
     });
-    // axios.get("https://localhost:3000/products").then((res) => {
-    //   console.log(res);
-    // });
+    console.log("All products are fetched!");
   }, []);
   return (
     <div>

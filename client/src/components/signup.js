@@ -4,7 +4,7 @@ import axios from "axios";
 const Signup = () => {
   const submitform = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3000/signup").then((res) => {
+    axios.post("http://localhost:3001/auth/register").then((res) => {
       console.log(res);
     });
     console.log("You are registered successfully!");
